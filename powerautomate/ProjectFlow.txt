@@ -1,0 +1,11 @@
+Engineering Support Automation Flow
+
+Version: 1.0
+
+Future Workflow
+
+1. Detect new PDF
+2. Rename file
+3. Move to Reports folder
+4. Notify Engineer
+5. Update Excel tracker
