@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document version="1.8" language="en-us">
+  <include target="Library.DateTime" />
+  <include target="Library.Math" />
+  <include target="Library.Logic" />
+  <include target="Library.Lookup" />
+  <include target="Library.Statistics" />
+  <include target="Library.Text" />
+  <include target="Library.Scripts" />
+  <notebook name="ProjectCostCalculator" title="Project Cost Calculator" unit="in" pagesize="816, 1056">
+    <include target="Library.Geometry" />
+    <planecontainer origin="0.2400000000000001, 0.28, 0" fontsize="20" fontweight="bold" dir="0.9999999999999999, 0, 0" normal="0, 0, 1"><textvalue>Engineering Support Automation Toolkit</textvalue></planecontainer>
+    <planecontainer origin="0.2500000000000011, 0.7499999999999999, 0" fontsize="16" dir="1, 0, 0" normal="0, 0, 1"><textvalue>Project Cost Calculator</textvalue></planecontainer>
+    <lines pts="0.19488888888889044, 1.1388888888888888, 0; 5.6, 1.1388888888888888, 0" />
+    <planecontainer origin="0.30000000000000004, 1.74, 0" dir="1.0000000000000002, 0, 0" normal="0, 0, 1" fontweight="bold"><textvalue><base64text>UHJvamVjdDogRW5naW5lZXJpbmcgU3VwcG9ydCBBdXRvbWF0aW9uIFRvb2xraXQNCg0KQ2xpZW50OiBBQkMgQ29uc3RydWN0aW9uIEx0ZC4NCg0KRW5naW5lZXI6IEpvaG4gQ2FybG8gTWFncGFudGF5DQoNCkRhdGU6IEp1bHkgMjEsIDIwMjY=</base64text></textvalue></planecontainer>
+    <rectangle origin="0.3799999999999998, 3.75, 0" normal="-0, -0, -1" dir="4, 0, 0" height="1" shapetype="Fill" fillcolor="#FFFFFF">
+      <dynexp formula="LaborHours = 120 hr">
+        <expbody>LaborHours = 120 hr</expbody>
+      </dynexp>
+    </rectangle>
+    <rectangle origin="0.3799999999999999, 4.01, 0" normal="-0, -0, -1" dir="4, 0, 0" height="1" shapetype="Fill" fillcolor="#FFFFFF">
+      <dynexp formula="HourlyRate=45 usd/hr">
+        <expbody>HourlyRate=45 usd/hr</expbody>
+      </dynexp>
+    </rectangle>
+    <rectangle origin="0.3799999999999999, 4.5200000000000005, 0" normal="-0, -0, -1" dir="3.999999999999999, 0, 0" height="1" shapetype="Fill" fillcolor="#FFFFFF">
+      <dynexp formula="LaborCost = LaborHours * HourlyRate">
+        <expbody>LaborCost = LaborHours * HourlyRate</expbody>
+        <expresult> = $5400</expresult>
+      </dynexp>
+    </rectangle>
+    <rectangle origin="0.38, 4.7700000000000005, 0" normal="-0, -0, -1" dir="4.000000000000001, 0, 0" height="1" shapetype="Fill" fillcolor="#FFFFFF">
+      <dynexp formula="MaterialCost=1800 usd">
+        <expbody>MaterialCost=1800 usd</expbody>
+      </dynexp>
+    </rectangle>
+    <rectangle origin="0.38, 5.04, 0" normal="-0, -0, -1" dir="4, 0, 0" height="1" shapetype="Fill" fillcolor="#FFFFFF">
+      <dynexp formula="EquipmentCost=950 usd">
+        <expbody>EquipmentCost=950 usd</expbody>
+      </dynexp>
+    </rectangle>
+    <rectangle origin="0.38, 5.290000000000002, 0" normal="-0, -0, -1" dir="4.000000000000001, 0, 0" height="1" shapetype="Fill" fillcolor="#FFFFFF">
+      <dynexp formula="Subtotal = LaborCost + MaterialCost + EquipmentCost">
+        <expbody>Subtotal = LaborCost + MaterialCost + EquipmentCost</expbody>
+        <expresult> = $8150</expresult>
+      </dynexp>
+    </rectangle>
+    <rectangle origin="0.3799999999999998, 5.55, 0" normal="-0, -0, -1" dir="4, 0, 0" height="1" shapetype="Fill" fillcolor="#FFFFFF">
+      <dynexp formula="Contingency = Subtotal * 10%">
+        <expbody>Contingency = Subtotal * 10%</expbody>
+        <expresult> = $815</expresult>
+      </dynexp>
+    </rectangle>
+    <rectangle origin="0.38, 5.8100000000000005, 0" normal="-0, -0, -1" dir="4, 0, 0" height="0.9999999999999991" shapetype="Fill" fillcolor="#FFFFFF">
+      <dynexp formula="TotalProjectCost = Subtotal + Contingency">
+        <expbody>TotalProjectCost = Subtotal + Contingency</expbody>
+        <expresult> = $8965</expresult>
+      </dynexp>
+    </rectangle>
+    <planecontainer origin="0.27999999999999997, 1.32, 0" fontsize="13" fontweight="bold" dir="1, 0, 0" normal="0, 0, 1"><textvalue>Project Information</textvalue></planecontainer>
+    <planecontainer origin="0.2999999999999994, 3.36, 0" fontsize="13" fontweight="bold" dir="1, 0, 0" normal="0, 0, 1"><textvalue>Cost Calculation</textvalue></planecontainer>
+  </notebook>
+</document>

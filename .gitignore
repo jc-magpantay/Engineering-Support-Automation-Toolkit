@@ -1,0 +1,24 @@
+# Excel temporary files
+~$*.xlsm
+~$*.xlsx
+*.tmp
+
+# Generated Reports
+reports/*/
+reports/**/*.pdf
+
+# Keep folder structure
+!reports/README.md
+
+# Excel export folder
+excel/Workbook/pdf/*.pdf
+
+# Logs
+logs/*.txt
+
+# VS Code
+.vscode/settings.json
+
+# Windows
+Thumbs.db
+Desktop.ini
